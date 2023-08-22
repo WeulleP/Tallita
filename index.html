@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="coracao.png" type="image/x-icon">
+    <title>Tallita ❤️ Weulle</title>
+</head>
+<body>
+    <div class="conteudo">
+        <h1>Tallita, aceita namorar cmg?</h1>
+        <div class="caixa_interno">
+            <a href="https://youtube.com/shorts/KiOQ2xYvgUs?si=1HM8iDY6TpDBi9aF"><button>Sim</button></a>
+            <button id="botao-negativo">Não</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const botaoNegativo = document.querySelector("#botao-negativo");
+            botaoNegativo.addEventListener("click", () => {
+                const x = Math.floor(Math.random() * (window.innerWidth - botaoNegativo.clientWidth));
+                const y = Math.floor(Math.random() * (window.innerHeight - botaoNegativo.clientWidth));
+
+                botaoNegativo.style.position = "absolute";
+                botaoNegativo.style.left = `${x}px`;
+                botaoNegativo.style.top = `${y}px`;
+            })
+        })
+
+
+
+    </script>
+</body>
+</html>
